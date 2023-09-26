@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Here!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- Header section displays navigation bar  -->
+
+    <header>
+        <a href="index.html" class="logo"><i class="fa fa-coffee"></i>Desilicious</a>
+        <nav class="navbar">
+            <a class="active" href="index.html#home">home</a>
+            <a class="active" href="index.html#specials">specials</a>
+            <a class="active" href="index.html#menu">menu</a>
+            <a class="active" href="index.html#reviews">reviews</a>
+            <a class="active" href="index.html#order">order</a>
+            <a href="help.html">help</a>
+             <!-- For contact us code -->
+             <div class="dropdown">
+                <a href="#" id="contact-link">Contact us</a>
+                <div class="dropdown-content" id="contact-details">
+                    <h2>Contact Information</h2>
+                    <p>Location: <input type="text" name="location" value="123 Main Street, City, Country"></p>
+                    <p>Phone Number: <input type="tel" name="phone" value="+1 (123) 456-7890"></p>
+                </div>
+            </div>
+            
+             <!-- Contact us code ends  -->
+            <a href="loginpage.html">Login</a>
+            
+           
+        </nav>
+
+        <div class="icons">
+        <a href="#" class="search"><i class="fas fa-search" id="search-icon"></i></a>
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+    </header>    
+
+        
+        <form action="accountcreated.html" method="get" class="signup-form" id="signupform">
+            <h1>Sign Up Here</h1>
+            <div class="login-form">
+                <table>
+                    <tr>
+                        <td><label for="firstname" class="colone">First Name:</label></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="text" name="firstname" id="firstname" placeholder="First Name" maxlength="16" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastname" class="colone">Last Name:</label></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="16" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="username" class="colone">Username:</label></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="text" name="username" id="username" placeholder="Username" maxlength="16" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email" class="colone">Email:</label></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="email" name="email" id="email" placeholder="Email" maxlength="16" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password" class="colone">Password:</label></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="password" name="password" id="password" placeholder="Password" minlength="8" maxlength="16" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirmpassword" class="colone">Confirm Password:</label></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" minlength="8" maxlength="16" required /></td>
+                    </tr>
+                </table>
+            </div>
+            <button type="submit">Sign Up</button> 
+            
+            <h3>Already a member? <a href="loginpage.html">Login</a></h3>
+          </form>
+
+          <script src="login.js"></script>
+
+</body>
+</html>

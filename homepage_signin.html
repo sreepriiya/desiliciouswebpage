@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    </head>
+    <body>
+
+
+ <!-- Header section displays navigation bar  -->
+
+        <header>
+            <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <a href="index.html" class="logo"><i class="fa fa-coffee"></i>Desilicious</a>
+        <nav class="navbar">    
+            <a class="nav-link active" href="#home">home</a>
+            <a class="nav-link" href="#specials">specials</a>
+            <a class="nav-link" href="#menu">menu</a>
+            <a class="nav-link" href="#reviews">reviews</a>
+            <a class="nav-link" href="#order">order</a>
+            <a href="help.html">help</a>
+             <!-- For contact us code -->
+            <div class="dropdown">
+                <a href="#" id="contact-link">Contact us</a>
+                <div class="dropdown-content" id="contact-details">
+                    <h2>Contact Information</h2>
+                    <p>Location: <input type="text" name="location" value="123 Main Street, City, Country"></p>
+                    <p>Phone Number: <input type="tel" name="phone" value="+1 (123) 456-7890"></p>
+                </div>
+            </div>
+             <!-- Contact us code ends  -->
+            <a href="Index.html">logout</a>
+           
+           
+        </nav>  
+
+        <div class="icons">
+        <a href="#" class="search"><i class="fas fa-search" id="search-icon"></i></a>
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+    </header>    
+
+ <!-- ---------------------------- Search box ----------------------------------  -->
+
+<!-- code for Search bar -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search now" name="" " id="search-box">
+        <lable for="search-box" class="fas fa-search"></lable>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+ <!-- ----------------------------- Home Box ---------------------------------  -->
+
+ <section id="home">
+<!--  Code for home page starts-->
+
+   <h1>Welcome to Our Home</h1>
+
+
+<section class="home" id="home">
+   
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+                <div class="swiper-slide"><img src="images/home1.jpeg" alt="image 1">
+                    <div class="text-overlay">
+                        <h1>Food is the best</h1>
+                    </div>
+                </div>
+              <div class="swiper-slide"><img src="images/home2.jpeg" alt="image 2"></div>
+              <div class="swiper-slide"><img src="images/home3.jpg" alt="image 3"></div>
+              <div class="swiper-slide"><img src="images/home4.jpeg" alt="image 4"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+           
+          </div>
+   
+
+</section>
+</section>
+
+<!-------------------------------- Sepecials  ------------------------------  -->
+
+ <!-- Code for menu starts -->
+ <section id="specials">
+    <section class="specials" id="specials">
+       <h3 class="sub-heading"><i class="fas fa-book"></i>Today's Specials </h3>
+        <!-- MENU 1  -->
+   
+       <div class="box-container">
+           <div class="box">
+               <div class="image">
+                   <img src="images/menu.jpg" alt="Image 1">
+                   <a class="fas fa-heart"></a>
+               </div>
+               <div class="content">
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                   </div> 
+                   <h1 class="custom-heading">Hakka Noodles </h1>
+                   <a class="custom-link">Hakka noodles are Indian-Chinese style noodles made with unleavened refined wheat flour. These are boiled al dente and then stir fried in a Chinese wok with oil, vegetables & soya sauce. Here hakka noodles refers to both the final dish and the type of noodles used.</a><br>
+                   <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                   <span class="price">$12.99</span>
+               </div>
+           </div>
+           <!-- MENU 2  -->
+           <div class="box" data-item-id="2">
+               <div class="image">
+                   <img src="images/menu1.jpg" alt="">
+                   <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="content">
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                   </div> 
+                   <h1 class="custom-heading">Chicken Biriyani</h1>
+                   <a class="custom-link">Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions, and flavorful saffron rice. For my Biryani, I simplify the order of operations, while retaining the traditional layered approach to assembling it.</a><br>
+                   <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                   <span class="price">$22.99</span>
+               </div>
+           </div>
+   
+           <!-- MENU 3  -->
+           <div class="box" data-item-id="3">
+               <div class="image">
+                   <img src="images/menu2.jpg" alt="">
+                   <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="content">
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                   </div> 
+                   <h1 class="custom-heading">Veggie bowl</h1>
+                   <a class="custom-link">A veggie bowl comprises a vibrant mix of fresh vegetables, plant-based proteins, and delectable dressings, offering a satisfying, health-conscious meal bursting with flavors, textures, and nutrients</a><br>
+                   <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                   <span class="price">$10.99</span>
+               </div>
+           </div>
+   
+           <!-- MENU 4  -->
+           <div class="box" data-item-id="4">
+               <div class="image">
+                   <img src="images/menu3.jpg" alt="">
+                   <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="content">
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                   </div> 
+                   <h1 class="custom-heading">Pav Bhaji</h1>
+                   <a class="custom-link">Pav Bhaji is a popular Indian street food dish consisting of mashed vegetables cooked with spices, served with buttered buns (pav). It's flavorful and satisfying.</a><br>
+                   <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                   <span class="price">$5.99</span>
+               </div>
+           </div>
+   
+           <!-- MENU 5  -->
+           <div class="box" data-item-id="5">
+               <div class="image">
+                   <img src="images/menu4.jpg" alt="">
+                   <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="content">
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                   </div> 
+                   <h1 class="custom-heading">Masala Dosa</h1>
+                   <a class="custom-link">Masala dosa is a South Indian delicacy—a crispy fermented rice and lentil crepe filled with spiced potato stuffing. Served with chutneys and sambar, it's a delicious, savory delight.</a><br>
+                   <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                   <span class="price">$5.99</span>
+               </div>
+           </div>
+   
+           <!-- MENU 6  -->
+           <div class="box" data-item-id="6">
+               <div class="image">
+                   <img src="images/menu5.jpg" alt="">
+                   <a href="#" class="fas fa-heart"></a>
+               </div>
+               <div class="content">
+                   <div class="stars">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star-half-alt"></i>
+                   </div> 
+                   <h1 class="custom-heading">Paneer Butter Masala</h1>
+                   <a class="custom-link">Paneer butter masala is a creamy North Indian dish featuring soft paneer (Indian cheese) cubes simmered in a rich tomato-based gravy with butter, cream, and aromatic spices. Deliciously indulgent.</a><br>
+                   <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                   <span class="price">$5.99</span>
+               </div>
+           </div>
+           <div id="cart-sidebar">
+               <!-- Cart content will be displayed here -->
+           </div>
+   </section>
+   </section> <!-------------------------------- Menu ------------------------------  -->
+
+ <section id="menu">
+
+    <section class="menu" id="menu">
+         <h3 class="sub-heading"> our menu </h3>
+          <!-- MENU 1  -->
+ 
+         <div class="box-container">
+             <div class="box" data-item-id="1">
+                 <div class="image">
+                     <img src="images/menu.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Hakka Noodles </h1>
+                     <a class="custom-link">Hakka noodles are Indian-Chinese style noodles made with unleavened refined wheat flour. These are boiled al dente and then stir fried in a Chinese wok with oil, vegetables & soya sauce. Here hakka noodles refers to both the final dish and the type of noodles used.</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$12.99</span>
+                 </div>
+             </div>
+             <!-- MENU 2  -->
+             <div class="box" data-item-id="2">
+                 <div class="image">
+                     <img src="images/menu1.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Chicken Biriyani</h1>
+                     <a class="custom-link">Chicken Biryani is a delicious savory rice dish that is loaded with spicy marinated chicken, caramelized onions, and flavorful saffron rice. For my Biryani, I simplify the order of operations, while retaining the traditional layered approach to assembling it.</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$22.99</span>
+                 </div>
+             </div>
+ 
+             <!-- MENU 3  -->
+             <div class="box" data-item-id="3">
+                 <div class="image">
+                     <img src="images/menu2.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Veggie bowl</h1>
+                     <a class="custom-link">A veggie bowl comprises a vibrant mix of fresh vegetables, plant-based proteins, and delectable dressings, offering a satisfying, health-conscious meal bursting with flavors, textures, and nutrients</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$10.99</span>
+                 </div>
+             </div>
+ 
+             <!-- MENU 4  -->
+             <div class="box" data-item-id="4">
+                 <div class="image">
+                     <img src="images/menu3.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Pav Bhaji</h1>
+                     <a class="custom-link">Pav Bhaji is a popular Indian street food dish consisting of mashed vegetables cooked with spices, served with buttered buns (pav). It's flavorful and satisfying.</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$11.99</span>
+                 </div>
+             </div>
+ 
+             <!-- MENU 5  -->
+             <div class="box" data-item-id="5">
+                 <div class="image">
+                     <img src="images/menu4.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Masala Dosa</h1>
+                     <a class="custom-link">Masala dosa is a South Indian delicacy—a crispy fermented rice and lentil crepe filled with spiced potato stuffing. Served with chutneys and sambar, it's a delicious, savory delight.</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$12.95</span>
+                 </div>
+             </div>
+ 
+             <!-- MENU 6  -->
+             <div class="box" data-item-id="6">
+                 <div class="image">
+                     <img src="images/menu5.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Paneer Butter Masala</h1>
+                     <a class="custom-link">Paneer butter masala is a creamy North Indian dish featuring soft paneer (Indian cheese) cubes simmered in a rich tomato-based gravy with butter, cream, and aromatic spices. Deliciously indulgent.</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$14.99</span>
+                 </div>
+             </div>
+ 
+             <!-- MENU 7  -->
+             <div class="box" data-item-id="7">
+                 <div class="image">
+                     <img src="images/menu6.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Gulab jamun</h1>
+                     <a class="custom-link">Gulab jamun is an Indian dessert of fried dough balls that are soaked in a sweet, sticky sugar syrup. As per tradition, the syrup has a delicate rose flavour: Gulab means 'rose water' and jamun refers to a berry of a similar size and colour</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$5.99</span>
+                 </div>
+             </div>
+             <div class="box" data-item-id="8">
+                 <div class="image">
+                     <img src="images/menu7.jpg" alt="">
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div> 
+                     <h1 class="custom-heading">Jalebi</h1>
+                     <a class="custom-link">Jalebi is a sweet Indian dessert made by deep-frying wheat flour batter into orange spirals, soaked in sugar syrup, offering a crispy, syrupy, and delightful indulgence.</a><br>
+                     <a href="#" class="btn add-to-cart" data-item-name="hakka noddles" data-item-price="22.99">add to cart</a><br>
+                     <span class="price">$7.99</span>
+                 </div>
+             </div>
+             
+ 
+             <div id="cart-sidebar">
+                 <!-- Cart content will be displayed here -->
+             </div>
+     </section>
+ 
+ </section>
+ <!-- -----------------------------------------------------  -->
+      <section id="reviews">
+         <!-- Your reviews section content -->
+     <h3 class="sub-heading"> Customer Reviews</h3>
+     <h1 class="heading"> What they say... </h1>
+ 
+     <div class="swiper-container review-slider">
+ 
+         <div class="swiper-wrapper">
+ 
+             <div class="swiper-slide slide">
+                 <i class="fas fa-quote-right"></i>
+                 <div class="user">
+                     <img src="images/review1.jpg" alt="">
+                     <div class="user-info">
+                         <h3>Emma</h3>
+                         <div class="stars">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star-half-alt"></i>
+                         </div>
+                     </div>
+                 </div>
+                 <p>
+                     Outstanding dining experience at Desilicious! Impeccable service, and the masala dosa was a culinary masterpiece. A must-visit for food enthusiasts!
+                 </p>  
+             </div>
+ 
+             <div class="swiper-slide slide">
+                 <i class="fas fa-quote-right"></i>
+                 <div class="user">
+                     <img src="images/review2.jpg" alt="" >
+                     <div class="user-info">
+                         <h3>Mark</h3>
+                         <div class="stars">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star-half-alt"></i>
+                         </div>
+                     </div>
+                 </div>
+                 <p>
+                     Absolutely loved Desilicious! The ambiance, presentation, and flavors were all top-notch. The Jalebi was a delightful surprise. Will be back for more!
+                 </p>
+             </div> 
+ 
+             <div class="swiper-slide slide">
+                 <i class="fas fa-quote-right"></i>
+                 <div class="user">
+                     <img src="images/review3.jpg" alt="">
+                     <div class="user-info">
+                         <h3>Isabella</h3>
+                         <div class="stars">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                         </div>
+                     </div>
+                 </div>
+                 <p>
+                     Desilicious exceeded expectations. Exceptional dishes, attentive staff, and a cozy atmosphere. The paneer butter masala was a taste sensation. Highly recommend!
+                 </p>
+             </div> 
+ 
+             <div class="swiper-slide slide">
+                 <i class="fas fa-quote-right"></i>
+                 <div class="user">
+                     <img src="images/review4.jpg" alt="">
+                     <div class="user-info">
+                         <h3>Jamie</h3>
+                         <div class="stars">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star-half-alt"></i>
+                         </div>
+                     </div>
+                 </div>
+                 <p>
+                     The food was exquisite, and the staff were warm and knowledgeable. Don't miss their gulab jamun – it's exceptional!!!!
+                 </p>
+             </div> 
+ 
+         </div>
+     </div>
+ </section>
+    
+<section id="order">
+    <!-- Your order section content -->
+    <br><br><br><br><br><br><h1 class ="sub-heading">Previous Orders:</h1><br><br><br><br><br><br><br>
+    <p>No previous orders found!</p><br><br><br><br><br><br><br><br><br>
+</section>
+    
+    <script src="projct.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="path-to-swiper-library.js"></script>
+
+    </body>
+</html>

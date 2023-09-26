@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Here!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <!-- Header section displays navigation bar  -->
+
+    <header>
+      <a href="index.html" class="logo"><i class="fa fa-coffee"></i>Desilicious</a>
+        <nav class="navbar">
+            <a class="active" href="index.html#home">home</a>
+            <a class="active" href="index.html#specials">specials</a>
+            <a class="active" href="index.html#menu">menu</a>
+            <a class="active" href="index.html#reviews">reviews</a>
+            <a class="active" href="index.html#order">order</a>
+            <a class="nav-link" href="help.html">help</a>
+             <!-- For contact us code -->
+             <div class="dropdown">
+              <a href="#" id="contact-link">Contact us</a>
+              <div class="dropdown-content" id="contact-details">
+                  <h2>Contact Information</h2>
+                  <p>Location: <input type="text" name="location" value="123 Main Street, City, Country"></p>
+                  <p>Phone Number: <input type="tel" name="phone" value="+1 (123) 456-7890"></p>
+              </div>
+          </div>
+            
+             <!-- Contact us code ends  -->
+            <a class="nav-link" href="loginpage.html">Login</a>
+            
+           
+        </nav>
+
+        <div class="icons">
+        <a href="#" class="search"><i class="fas fa-search" id="search-icon"></i></a>
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+    </header>   
+    
+    <form action="help_message.html" method="get" class="help" id="help">
+        <div class="contact_us">
+            <div class="responsive-container-block container">
+              <form class="form-box">
+                <p class="text-blk contact-head">
+                  Get in touch
+                </p>
+                <div class="container-block form-wrapper">
+                  <div class="responsive-container-block">
+                    <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-4">
+                      <p class="text-blk input-title">
+                        First Name
+                      </p>
+                      <input class="input" id="ijowk-4" name="FirstName">
+                    </div>
+                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                      <p class="text-blk input-title">
+                        Last Name
+                      </p>
+                      <input class="input" id="indfi-3" name="Last Name">
+                    </div>
+                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                      <p class="text-blk input-title">
+                        Email
+                      </p>
+                      <input class="input" id="ipmgh-4" name="Email">
+                    </div>
+                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                      <p class="text-blk input-title">
+                        Phone No.
+                      </p>
+                      <input class="input" id="imgis-4" name="PhoneNumber">
+                    </div>
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-4">
+                      <p class="text-blk input-title">
+                        Message
+                      </p>
+                      <textarea class="textinput" id="i5vyy-4" placeholder="Write your message..."></textarea>
+                    </div>
+                  </div>
+                  <button class="submit-btn">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </form>
+
+        <script src="projct.js"></script>
+   
+
+</body>
+</html>
